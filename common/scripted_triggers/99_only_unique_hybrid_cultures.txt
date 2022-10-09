@@ -1,0 +1,1126 @@
+﻿ouhc_anatolian_turkish = {
+	capital_county = {
+		title_province = { geographical_region = ghw_region_anatolia }
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title_province = {
+			geographical_region = ghw_region_anatolia
+		}
+	}
+	OR = {
+		root.culture = { has_cultural_pillar = heritage_turkic }
+		scope:culture = { has_cultural_pillar = heritage_turkic }
+	}
+}
+
+ouhc_norse_gael = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_goidelic }
+			scope:culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_north_germanic }
+			scope:culture = { has_cultural_pillar = heritage_goidelic }
+		}
+	}
+}
+
+ouhc_danelander = {
+	OR = {
+		AND = {
+			OR = {
+				root.culture = culture:anglo_saxon
+				root.culture = culture:english
+			}
+			scope:culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_north_germanic }
+			OR = {
+				scope:culture = culture:anglo_saxon
+				scope:culture = culture:english
+			}
+		}
+	}
+	OR = {
+		capital_county = {
+			title:k_danelaw = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		capital_county = {
+			title:k_daneland = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		primary_title = title:k_danelaw
+		primary_title = title:k_daneland
+	}
+}
+
+ouhc_engelsk = {
+	OR = {
+		AND = {
+			root.culture = culture:anglo_saxon
+			scope:culture = culture:norwegian
+		}
+		AND = {
+			root.culture = culture:norwegian
+			scope:culture = culture:anglo_saxon
+		}
+	}
+	NOT = { religion = religion:germanic_religion } # Norse followers should become Anglo-Norse
+}
+
+ouhc_anglo_norse = {
+	OR = {
+		AND = {
+			OR = {
+				root.culture = culture:anglo_saxon
+				root.culture = culture:english
+			}
+			scope:culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_north_germanic }
+			OR = {
+				scope:culture = culture:anglo_saxon
+				scope:culture = culture:english
+			}
+		}
+	}
+}
+
+ouhc_hindustani_proper = {
+	capital_county = {
+		title_province = { geographical_region = ghw_region_northern_india }
+	}
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_iranian }
+			scope:culture = { has_cultural_pillar = heritage_indo_aryan }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_turkic }
+			scope:culture = { has_cultural_pillar = heritage_indo_aryan }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title_province = {
+			geographical_region = ghw_region_northern_india
+		}
+	}
+}
+
+ouhc_rhinelander = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_central_germanic }
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+	capital_county = {
+		title_province = { geographical_region = custom_rhineland }
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title_province = {
+			geographical_region = custom_rhineland
+		}
+	}
+}
+
+ouhc_turko_iranian = { #Just making sure we get a pretty name for Oghuz+Persian regardless of who hybridizes who.
+	root.culture = culture:turkish
+	scope:culture = culture:persian
+}
+
+ouhc_turko_afghan = { #Just making sure we get a pretty name for Afghan+Oghuz regardless of who hybridizes who.
+	root.culture = culture:turkish
+	scope:culture = culture:afghan
+}
+
+ouhc_ulster_scots = {
+	OR = {
+		AND = {
+			root.culture = culture:scottish
+			scope:culture = culture:irish
+		}
+		AND = {
+			root.culture = culture:irish
+			scope:culture = culture:scottish
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title_province = {
+			duchy = title:d_ulster
+		}
+	}
+}
+
+ouhc_swiss = {
+	OR = {
+		capital_county = {
+			title:k_switzerland = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		has_primary_title = title:k_switzerland
+	}
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = { has_cultural_pillar = heritage_latin }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_central_germanic }
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_central_germanic }
+			scope:culture = { has_cultural_pillar = heritage_latin }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_latin }
+			scope:culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_latin }
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_transylvanian = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_magyar }
+			scope:culture = { has_cultural_pillar = heritage_vlach }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_vlach }
+			scope:culture = { has_cultural_pillar = heritage_magyar }
+		}
+	}
+	OR = {
+		capital_county = {
+			title:d_transylvania = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		capital_county = {
+			title:d_transylvanian_alps = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		has_primary_title = title:d_transylvania
+		has_primary_title = title:d_transylvanian_alps
+	}
+	any_sub_realm_county = {
+		OR = {
+			duchy = title:d_transylvania
+			duchy = title:d_transylvanian_alps
+		}
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_alsatian = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_central_germanic }
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			duchy = title:d_alsace
+			duchy = title:d_upper_lorraine
+		}
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_vlaemsch = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = culture:dutch
+		}
+		AND = {
+			root.culture = culture:dutch
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_khalkha = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_tibetan }
+			scope:culture = { has_cultural_pillar = heritage_mongolic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_mongolic }
+			scope:culture = { has_cultural_pillar = heritage_tibetan }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_himalayan = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_tibetan }
+			scope:culture = culture:nepali
+		}
+		AND = {
+			root.culture = culture:nepali
+			scope:culture = { has_cultural_pillar = heritage_tibetan }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_angevin_hybrid = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = { has_cultural_pillar = heritage_west_germanic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_west_germanic }
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_kazakh = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_mongolic }
+			scope:culture = { has_cultural_pillar = heritage_turkic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_turkic }
+			scope:culture = { has_cultural_pillar = heritage_mongolic }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_kurlander = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_central_germanic }
+			scope:culture = { has_cultural_pillar = heritage_baltic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_central_germanic }
+			scope:culture = { has_cultural_pillar = heritage_balto_finnic }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		duchy = title:d_courland
+	}
+}
+
+ouhc_livonian = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_balto_finnic }
+			scope:culture = { has_cultural_pillar = heritage_baltic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_baltic }
+			scope:culture = { has_cultural_pillar = heritage_balto_finnic }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_moroccan_hybrid = {
+	OR = {
+		AND = {
+			OR = { # Arabic language to make Andalusian valid
+				root.culture = { has_cultural_pillar = heritage_arabic }
+				root.culture = { has_cultural_pillar = language_arabic }
+			}
+			scope:culture = { has_cultural_pillar = heritage_berber }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_berber }
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_arabic }
+				scope:culture = { has_cultural_pillar = language_arabic }
+			}
+		}
+	}
+	OR = {
+		capital_county = {
+			title:k_maghreb = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		primary_title = title:k_maghreb
+		# You are an Andalusian expanding into Africa
+		AND = {
+			OR = {
+				root.culture = culture:andalusian
+				scope:culture = culture:andalusian
+			}
+			has_title = title:k_maghreb
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_algerian_hybrid = {
+	OR = {
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_arabic }
+				root.culture = { has_cultural_pillar = language_arabic }
+			}
+			scope:culture = { has_cultural_pillar = heritage_berber }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_berber }
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_arabic }
+				scope:culture = { has_cultural_pillar = language_arabic }
+			}
+		}
+	}
+	OR = {
+		capital_county = {
+			title:k_tahert = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		primary_title = title:k_tahert
+		# You are an Andalusian expanding into Africa
+		AND = {
+			OR = {
+				root.culture = culture:andalusian
+				scope:culture = culture:andalusian
+			}
+			has_title = title:k_tahert
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_tripolitanian_hybrid = {
+	OR = {
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_arabic }
+				root.culture = { has_cultural_pillar = language_arabic }
+			}
+			scope:culture = { has_cultural_pillar = heritage_berber }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_berber }
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_arabic }
+				scope:culture = { has_cultural_pillar = language_arabic }
+			}
+		}
+	}
+	OR = {
+		capital_county = {
+			title:d_syrte = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		capital_county = {
+			title:d_fezzan = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		capital_county = {
+			title:d_cyrenaica = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		primary_title = title:d_syrte
+		primary_title = title:d_fezzan
+		primary_title = title:d_cyrenaica
+		# You are an Andalusian expanding into Africa
+		AND = {
+			OR = {
+				root.culture = culture:andalusian
+				scope:culture = culture:andalusian
+			}
+			OR = {
+				has_title = title:d_syrte
+				has_title = title:d_fezzan
+				has_title = title:d_cyrenaica
+			}
+			NOT = { has_title = title:k_africa }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_tunisian_hybrid = {
+	OR = {
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_arabic }
+				root.culture = { has_cultural_pillar = language_arabic }
+			}
+			scope:culture = { has_cultural_pillar = heritage_berber }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_berber }
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_arabic }
+				scope:culture = { has_cultural_pillar = language_arabic }
+			}
+		}
+	}
+	OR = {
+		capital_county = {
+			title:k_africa = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		primary_title = title:k_africa
+		# You are an Andalusian expanding into Africa
+		AND = {
+			OR = {
+				root.culture = culture:andalusian
+				scope:culture = culture:andalusian
+			}
+			has_title = title:k_tahert
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_kuzarim = {
+	OR = {
+		AND = {
+			root.culture = culture:khazar
+			scope:culture = { has_cultural_pillar = heritage_israelite }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_israelite }
+			scope:culture = culture:khazar
+		}
+	}
+	faith = { religion_tag = judaism_religion }
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_siddi = {
+	OR = {
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_east_african }
+				root.culture = { has_cultural_pillar = heritage_somalian }
+			}
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_indo_aryan }
+				scope:culture = { has_cultural_pillar = heritage_dravidian }
+			}
+		}
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_indo_aryan }
+				root.culture = { has_cultural_pillar = heritage_dravidian }
+			}
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_east_african }
+				scope:culture = { has_cultural_pillar = heritage_somalian }
+			}
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_bari = { # Emirate of Bari
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_berber }
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_latin }
+				scope:culture = { has_cultural_pillar = heritage_frankish }
+			}
+		}
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_latin }
+				root.culture = { has_cultural_pillar = heritage_frankish }
+			}
+			scope:culture = { has_cultural_pillar = heritage_berber }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_gyalrong = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_tibetan }
+			scope:culture = { has_cultural_pillar = heritage_qiangic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_qiangic }
+			scope:culture = { has_cultural_pillar = heritage_tibetan }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_lebanese_hybrid = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_byzantine }
+			scope:culture = { has_cultural_pillar = heritage_arabic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_arabic }
+			scope:culture = { has_cultural_pillar = heritage_byzantine }
+		}
+	}
+	OR = {
+		capital_county = {
+			title:k_syria = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		primary_title = title:k_syria
+	}
+	any_sub_realm_county = {
+		title:k_syria = {
+			is_de_jure_liege_or_above_target = prev
+		}
+	}
+}
+
+ouhc_outremer = {
+	root.culture = { has_cultural_pillar = heritage_frankish }
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_oltremare = {
+	root.culture = { has_cultural_pillar = heritage_latin }
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_ultramar = {
+	root.culture = { has_cultural_pillar = heritage_iberian }
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	faith.religion = religion:christianity_religion # Prevents Andalusians from becoming Ultramar
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_jerusalemer = {
+	OR = {
+		root.culture = { has_cultural_pillar = heritage_north_germanic }
+		root.culture = { has_cultural_pillar = heritage_central_germanic }
+		root.culture = { has_cultural_pillar = heritage_west_germanic }
+	}
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_jeruzaleman = {
+	OR = {
+		root.culture = { has_cultural_pillar = heritage_south_slavic }
+		root.culture = { has_cultural_pillar = heritage_west_slavic }
+		root.culture = { has_cultural_pillar = heritage_east_slavic }
+	}
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_kulfoldi = {
+	root.culture = { has_cultural_pillar = heritage_magyar }
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_dramor = {
+	root.culture = { has_cultural_pillar = heritage_brythonic }
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_coigriche = {
+	root.culture = { has_cultural_pillar = heritage_goidelic }
+	scope:culture = { has_cultural_pillar = heritage_arabic }
+	any_sub_realm_county = {
+		title_province = { geographical_region = world_middle_east_jerusalem }
+	}
+}
+
+ouhc_arpitan_hybrid = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_frankish }
+			scope:culture = { has_cultural_pillar = heritage_latin }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_latin }
+			scope:culture = { has_cultural_pillar = heritage_frankish }
+		}
+	}
+	OR = {
+		capital_county = {
+			title:d_dauphine = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		capital_county = {
+			title:d_savoie = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		capital_county = {
+			title:d_provence = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+		has_primary_title = title:d_dauphine
+		has_primary_title = title:d_savoie
+		has_primary_title = title:d_provence
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		OR = {
+			duchy = title:d_dauphine
+			duchy = title:d_savoie
+			duchy = title:d_provence
+		}
+	}
+}
+
+ouhc_new_english_hybrid = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_west_germanic }
+			OR = {
+				scope:culture = { has_cultural_pillar = heritage_mongolic }
+				scope:culture = { has_cultural_pillar = heritage_turkic }
+			}
+		}
+		AND = {
+			OR = {
+				root.culture = { has_cultural_pillar = heritage_mongolic }
+				root.culture = { has_cultural_pillar = heritage_turkic }
+			}
+			scope:culture = { has_cultural_pillar = heritage_west_germanic }
+		}
+	}
+	capital_county = {
+		title_province = {
+			geographical_region = world_steppe
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title_province = {
+			geographical_region = world_steppe
+		}
+	}
+}
+
+ouhc_upper_saxon_hybrid = {
+	OR = {
+		AND = {
+			root.culture = culture:saxon
+			scope:culture = culture:polabian
+		}
+		AND = {
+			root.culture = culture:polabian
+			scope:culture = culture:saxon
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_dobrujan = {
+	OR = {
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_vlach }
+			scope:culture = { has_cultural_pillar = heritage_turkic }
+		}
+		AND = {
+			root.culture = { has_cultural_pillar = heritage_turkic }
+			scope:culture = { has_cultural_pillar = heritage_vlach }
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title_province = {
+			OR = {
+				duchy = title:d_dobrudja
+				duchy = title:d_bugeac
+			}
+		}
+	}
+}
+
+ouhc_aromanian = {
+	OR = {
+		AND = {
+			root.culture = {
+				OR = {
+					this = { has_cultural_pillar = heritage_vlach }
+					any_parent_culture_or_above = { this = { has_cultural_pillar = heritage_vlach } }
+				}
+			}
+			scope:culture = {
+				has_cultural_pillar = heritage_byzantine
+			}
+		}
+		AND = {
+			root.culture = {
+				has_cultural_pillar = heritage_byzantine
+			}
+			scope:culture = {
+				OR = {
+					this = { has_cultural_pillar = heritage_vlach }
+					any_parent_culture_or_above = { this = { has_cultural_pillar = heritage_vlach } }
+				}
+			}
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_dalmatian_hybrid = {
+	capital_county = {
+		# Is in the Balkans but not Greece, Bulgaria, or Romania
+		title_province = {
+			geographical_region = custom_south_slavia
+		}
+		NOR = {
+			title:k_dacia = {
+				is_de_jure_liege_or_above_target = prev
+			}
+			title:k_moldavia = {
+				is_de_jure_liege_or_above_target = prev
+			}
+			title:k_bulgaria = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+	root.culture = {
+		OR = {
+			has_cultural_pillar = heritage_south_slavic
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_latin
+		}
+	}
+	scope:culture = {
+		OR = {
+			has_cultural_pillar = heritage_south_slavic
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_latin
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		any_county_province = { is_coastal = yes }
+	}
+}
+
+ouhc_neapolitan_hybrid = {
+	capital_county = {
+		title:k_sicily = {
+			is_de_jure_liege_or_above_target = prev
+		}
+		NOT = {
+			title:d_sicily = {
+				is_de_jure_liege_or_above_target = prev
+			}
+		}
+	}
+	root.culture = {
+		OR = {
+			has_cultural_pillar = heritage_latin
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_berber
+		}
+	}
+	scope:culture = {
+		OR = {
+			has_cultural_pillar = heritage_latin
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_berber
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+		title:d_capua = {
+			is_de_jure_liege_or_above_target = prev
+		}
+	}
+}
+
+ouhc_siculo_norman = {
+	capital_county = {
+		title:k_sicily = {
+			is_de_jure_liege_or_above_target = prev
+		}
+	}
+	root.culture = culture:norman
+	scope:culture = {
+		OR = {
+			has_cultural_pillar = heritage_latin
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_berber
+		}
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_arvorigeg = {
+	root.culture = {
+		has_cultural_pillar = heritage_brythonic
+	}
+	scope:culture = {
+		has_cultural_pillar = heritage_frankish
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_gallo = {
+	root.culture = {
+		has_cultural_pillar = heritage_frankish
+	}
+	scope:culture = {
+		has_cultural_pillar = heritage_brythonic
+	}
+	any_sub_realm_county = {
+		OR = {
+			culture = root.culture
+			culture = scope:culture
+		}
+	}
+}
+
+ouhc_has_a_cool_flavor = {
+	OR = {
+		ouhc_anatolian_turkish = yes
+		ouhc_norse_gael = yes
+		ouhc_danelander = yes
+		ouhc_engelsk = yes
+		ouhc_anglo_norse = yes
+		ouhc_hindustani_proper = yes
+		ouhc_rhinelander = yes
+		ouhc_turko_iranian = yes
+		ouhc_turko_afghan = yes
+		ouhc_ulster_scots = yes
+		ouhc_swiss = yes
+		ouhc_transylvanian = yes
+		ouhc_alsatian = yes
+		ouhc_vlaemsch = yes
+		ouhc_khalkha = yes
+		ouhc_himalayan = yes
+		ouhc_angevin_hybrid = yes
+		ouhc_kazakh = yes
+		ouhc_kurlander = yes
+		ouhc_livonian = yes
+		ouhc_moroccan_hybrid = yes
+		ouhc_algerian_hybrid = yes
+		ouhc_tripolitanian_hybrid = yes
+		ouhc_tunisian_hybrid = yes
+		ouhc_kuzarim = yes
+		ouhc_siddi = yes
+		ouhc_bari = yes
+		ouhc_gyalrong = yes
+		ouhc_lebanese_hybrid = yes
+		ouhc_outremer = yes
+		ouhc_oltremare = yes
+		ouhc_ultramar = yes
+		ouhc_jerusalemer = yes
+		ouhc_jeruzaleman = yes
+		ouhc_kulfoldi = yes
+		ouhc_dramor = yes
+		ouhc_coigriche = yes
+		ouhc_arpitan_hybrid = yes
+		ouhc_new_english_hybrid = yes
+		ouhc_upper_saxon_hybrid = yes
+		ouhc_dobrujan = yes
+		ouhc_aromanian = yes
+		ouhc_dalmatian_hybrid = yes
+		ouhc_neapolitan_hybrid = yes
+		ouhc_siculo_norman = yes
+		ouhc_arvorigeg = yes
+		ouhc_gallo = yes
+	}
+}
