@@ -157,6 +157,13 @@ culture_emergence_events.0001 = {
 				}
 			}
 		}
+
+		# added by Viegnar
+
+		root.capital_county.culture = {
+			save_temporary_scope_as = culture
+		}
+		ouhc_has_a_cool_flavor = yes
 	}
 	
 	weight_multiplier = {
