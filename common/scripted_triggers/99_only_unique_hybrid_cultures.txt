@@ -1075,11 +1075,18 @@ ouhc_gallo = {
 
 ouhc_has_a_cool_flavor = {
 	OR = {
+		has_game_rule = only_unique_hybrid_cultures_disabled
 		ouhc_anatolian_turkish = yes
-		ouhc_norse_gael = yes
+		AND = {
+			NOT = { has_game_rule = only_unique_hybrid_cultures_strict }
+			ouhc_norse_gael = yes
+		}
 		ouhc_danelander = yes
 		ouhc_engelsk = yes
-		ouhc_anglo_norse = yes
+		AND = {
+			NOT = { has_game_rule = only_unique_hybrid_cultures_strict }
+			ouhc_anglo_norse = yes
+		}
 		ouhc_hindustani_proper = yes
 		ouhc_rhinelander = yes
 		ouhc_turko_iranian = yes
@@ -1119,7 +1126,10 @@ ouhc_has_a_cool_flavor = {
 		ouhc_aromanian = yes
 		ouhc_dalmatian_hybrid = yes
 		ouhc_neapolitan_hybrid = yes
-		ouhc_siculo_norman = yes
+		AND = {
+			NOT = { has_game_rule = only_unique_hybrid_cultures_strict }
+			ouhc_siculo_norman = yes
+		}
 		ouhc_arvorigeg = yes
 		ouhc_gallo = yes
 	}
