@@ -3,4 +3,5 @@
 	only_unique_hybrid_cultures_disabled = {}
 	only_unique_hybrid_cultures_enabled = {}
 	only_unique_hybrid_cultures_strict = {}
+	only_unique_hybrid_cultures_ultra_strict = {}
 }

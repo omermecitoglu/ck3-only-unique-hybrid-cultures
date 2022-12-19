@@ -8,3 +8,5 @@
 	setting_only_unique_hybrid_cultures_enabled_desc: "AI can only form unique [hybrid_culture|E]s."
 	setting_only_unique_hybrid_cultures_strict: "Strict"
 	setting_only_unique_hybrid_cultures_strict_desc: "AI can only form unique [hybrid_culture|E]s. Excluding Norse-Gael, Anglo-Nordic and Siculo-Norman."
+	setting_only_unique_hybrid_cultures_ultra_strict: "Ultra Strict"
+	setting_only_unique_hybrid_cultures_ultra_strict_desc: "Strict + Only Unique Divergent Cultures"
