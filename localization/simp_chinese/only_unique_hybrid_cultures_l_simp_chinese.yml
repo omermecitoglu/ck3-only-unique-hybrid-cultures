@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+  ONLY_UNIQUE_HYBRID_CULTURES_ERROR: "这不是史诗融合文化"
+  rule_only_unique_hybrid_cultures: "只限史诗融合文化"
+  setting_only_unique_hybrid_cultures_disabled: "禁用"
+  setting_only_unique_hybrid_cultures_disabled_desc: "不限制AI生成[hybrid_culture|E]。"
+  setting_only_unique_hybrid_cultures_enabled: "启用"
+  setting_only_unique_hybrid_cultures_enabled_desc: "AI只能生成 [hybrid_culture|E]."
+  setting_only_unique_hybrid_cultures_strict: "严格"
+  setting_only_unique_hybrid_cultures_strict_desc: "AI 只能生成 [hybrid_culture|E]。诺斯-盖尔， 盎格鲁-诺斯，和 西西里-诺曼 除外。"
