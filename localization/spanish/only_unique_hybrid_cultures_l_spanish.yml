@@ -1,0 +1,9 @@
+﻿l_spanish:
+  ONLY_UNIQUE_HYBRID_CULTURES_ERROR: "Esta no es una cultura híbrida única."
+  rule_only_unique_hybrid_cultures: "Sólo culturas híbridas únicas"
+  setting_only_unique_hybrid_cultures_disabled: "Desactivado"
+  setting_only_unique_hybrid_cultures_disabled_desc: "La IA no tiene restricciones para formar [hybrid_culture|E]."
+  setting_only_unique_hybrid_cultures_enabled: "Activado"
+  setting_only_unique_hybrid_cultures_enabled_desc: "La IA sólo puede formar [hybrid_culture|E] únicas."
+  setting_only_unique_hybrid_cultures_strict: "Estricto"
+  setting_only_unique_hybrid_cultures_strict_desc: "La IA sólo puede formar [hybrid_culture|E] únicas. Excluyendo nórdico-gaélico, anglo-nórdico y siculo-normando."

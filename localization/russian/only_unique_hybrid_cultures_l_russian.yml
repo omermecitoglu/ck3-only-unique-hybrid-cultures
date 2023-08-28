@@ -1,0 +1,9 @@
+﻿l_russian:
+  ONLY_UNIQUE_HYBRID_CULTURES_ERROR: "Это не уникальная гибридная культура"
+  rule_only_unique_hybrid_cultures: "Только уникальные гибридные культуры"
+  setting_only_unique_hybrid_cultures_disabled: "Отключено"
+  setting_only_unique_hybrid_cultures_disabled_desc: "ИИ не имеет ограничений на формирование [hybrid_culture|E]."
+  setting_only_unique_hybrid_cultures_enabled: "Включено"
+  setting_only_unique_hybrid_cultures_enabled_desc: "ИИ может формировать только уникальные [hybrid_culture|E]."
+  setting_only_unique_hybrid_cultures_strict: "Строгий"
+  setting_only_unique_hybrid_cultures_strict_desc: "ИИ может формировать только уникальные [hybrid_culture|E], за исключением норвежско-гэльской, англо-норвежской и итало-норманнской."

@@ -1,0 +1,9 @@
+﻿l_french:
+  ONLY_UNIQUE_HYBRID_CULTURES_ERROR: "Il ne s’agit pas d’une culture hybride unique"
+  rule_only_unique_hybrid_cultures: "Seulement les cultures hybrides uniques"
+  setting_only_unique_hybrid_cultures_disabled: "Désactivées"
+  setting_only_unique_hybrid_cultures_disabled_desc: "L'Intelligence Artificielle n'a pas de restriction sur la formation de [hybrid_culture|E]s."
+  setting_only_unique_hybrid_cultures_enabled: "Activé"
+  setting_only_unique_hybrid_cultures_enabled_desc: "L'Intelligence Artificielle peut que former des [hybrid_culture|E]s uniques."
+  setting_only_unique_hybrid_cultures_strict: "Stricte"
+  setting_only_unique_hybrid_cultures_strict_desc: "L'Intelligence Artificielle ne peut former que des uniques [hybrid_culture|E]. Sauf Norse-Gaël, Anglo-Nordique et Sicile-Normand."

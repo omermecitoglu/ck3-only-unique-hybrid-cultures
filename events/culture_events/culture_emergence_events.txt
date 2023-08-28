@@ -1,4 +1,4 @@
-﻿namespace = culture_emergence_events # 1.7.2
+﻿namespace = culture_emergence_events # 1.10.0.1
 
 # Opportunity for your culture to hybridize with your capital culture
 culture_emergence_events.0001 = {
@@ -7,7 +7,7 @@ culture_emergence_events.0001 = {
 	desc = culture_emergence_events.0001.desc
 	theme = realm
 	override_background = {
-		event_background = terrain_scope
+		reference = terrain_scope
 	}
 	left_portrait = {
 		character = root
@@ -304,7 +304,7 @@ culture_emergence_events.0002 = {
 	desc = culture_emergence_events.0002.desc
 	theme = realm
 	override_background = {
-		event_background = terrain_scope
+		reference = terrain_scope
 	}
 	left_portrait = {
 		character = root
@@ -545,7 +545,6 @@ culture_emergence_events.0003 = { # Emergent Divergences, based on adjacency to 
 	#	animation = happiness
 	#}
 	
-	type = empty
 	scope = culture
 	hidden = yes
 	

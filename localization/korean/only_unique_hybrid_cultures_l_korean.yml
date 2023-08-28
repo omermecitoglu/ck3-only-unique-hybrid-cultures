@@ -1,0 +1,9 @@
+﻿l_korean:
+  ONLY_UNIQUE_HYBRID_CULTURES_ERROR: "이는 독특한 하이브리드 문화가 아니다."
+  rule_only_unique_hybrid_cultures: "유일한 하이브리드 문화"
+  setting_only_unique_hybrid_cultures_disabled: "장애가 있는"
+  setting_only_unique_hybrid_cultures_disabled_desc: "AI는 [hybrid_culture|E]를 형성하는 데 제한이 없습니다."
+  setting_only_unique_hybrid_cultures_enabled: "활성화됨"
+  setting_only_unique_hybrid_cultures_enabled_desc: "AI는 고유한 [hybrid_culture|E]만 형성할 수 있습니다."
+  setting_only_unique_hybrid_cultures_strict: "엄격한"
+  setting_only_unique_hybrid_cultures_strict_desc: "AI는 고유한 [hybrid_culture|E]만 형성할 수 있습니다. Norse-Gael, Anglo-Nordic 및 Siculo-Norman은 제외됩니다."
